@@ -113,7 +113,7 @@ Q(t+1)=T′Q(t)+TQ(t)′
 
 
 ### PROGRAM 1(T FLIP FLOP)
-/*
+```
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
 Developed by: JEGADEESH S
 RegisterNumber:  212222230055
@@ -131,7 +131,7 @@ Qbar=((~T)&Qbar)|(T&(~Qbar));
 end
 endmodule
 
-*/
+```
 ### RTL LOGIC FOR FLIPFLOPS 
 ![Screenshot 2023-05-25 141548](https://github.com/JEGADEESH07/Experiment--05-Implementation-of-flipflops-using-verilog/assets/113497131/fb8fd4ad-f76e-4968-9486-43e5df88cdbb)
 
@@ -140,7 +140,7 @@ endmodule
 
 
 ### PROGRAM 2(D FLIP FLOP)
-/*
+```
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
 Developed by: JEGADEESH S
 RegisterNumber:  212222230055
@@ -158,7 +158,7 @@ Qbar=~D;
 end
 endmodule
 
-*/
+```
 ### RTL LOGIC FOR FLIPFLOPS 
 ![Screenshot 2023-05-31 165256](https://github.com/JEGADEESH07/Experiment--05-Implementation-of-flipflops-using-verilog/assets/113497131/8455ee11-3026-47d3-80d7-b287017707af)
 
@@ -168,7 +168,7 @@ endmodule
 
 
 ### PROGRAM 3(SR FLIP FLOP)
-/*
+```
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
 Developed by: JEGADEESH S
 RegisterNumber:  212222230055
@@ -186,7 +186,7 @@ Qbar=R|((~S)&(Qbar));
 end
 endmodule
 
-*/
+```
 ### RTL LOGIC FOR FLIPFLOPS 
 ![Screenshot 2023-05-25 115651](https://github.com/JEGADEESH07/Experiment--05-Implementation-of-flipflops-using-verilog/assets/113497131/d5efbe42-75c4-4def-af58-361ef70e1bfc)
 
@@ -196,7 +196,7 @@ endmodule
 
 
 ### PROGRAM 4(JK FLIP FLOP)
-/*
+```
 Program for flipflops and verify its truth table in quartus using Verilog programming.
 Developed by: JEGADEESH S
 RegisterNumber:  212222230055
@@ -214,7 +214,7 @@ Qbar=((~J)&(Qbar))|K&(~Qbar);
 end
 endmodule
 
-*/
+```
 ### RTL LOGIC FOR FLIPFLOPS 
 ![Screenshot 2023-05-25 113050](https://github.com/JEGADEESH07/Experiment--05-Implementation-of-flipflops-using-verilog/assets/113497131/175a838e-2071-40e5-ae46-4d9db418b6ff)
 
