@@ -102,37 +102,124 @@ Q(t+1)=T′Q(t)+TQ(t)′
 ⇒Q(t+1)=T⊕Q(t)
 
 ### Procedure
-/* write all the steps invloved */
+/* 1.Using nand gates and wires construct sr flip flop.
+
+2.Repeat same steps to construct JK,D,T flipflops.
+
+3.Find Rtl logic and timing diagram for all flipflops.
+
+4.end the program. */
 
 
 
-### PROGRAM 
+### PROGRAM 1(T FLIP FLOP)
 /*
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
+Developed by: JEGADEESH S
+RegisterNumber:  212222230055
+
+module flipflops(T,clk,Q,Qbar);
+input T,clk;
+output reg Q;
+output reg Qbar;
+initial Q=0;
+initial Qbar=1;
+always @(posedge clk)
+begin
+Q=(T&(~Q))|((~T)&Q);
+Qbar=((~T)&Qbar)|(T&(~Qbar));
+end
+endmodule
+
 */
-
-
-
-
-
-
 ### RTL LOGIC FOR FLIPFLOPS 
-
-
-
-
-
-
-
-
+![Screenshot 2023-05-25 141548](https://github.com/JEGADEESH07/Experiment--05-Implementation-of-flipflops-using-verilog/assets/113497131/fb8fd4ad-f76e-4968-9486-43e5df88cdbb)
 
 ### TIMING DIGRAMS FOR FLIP FLOPS 
+![Screenshot 2023-05-25 141515](https://github.com/JEGADEESH07/Experiment--05-Implementation-of-flipflops-using-verilog/assets/113497131/c62f2d8d-919c-4639-88d9-84c1419a7d25)
+
+
+### PROGRAM 2(D FLIP FLOP)
+/*
+Program for flipflops  and verify its truth table in quartus using Verilog programming.
+Developed by: JEGADEESH S
+RegisterNumber:  212222230055
+
+module flipflops(D,clk,Q,Qbar);
+input D,clk;
+output reg Q;
+output reg Qbar;
+initial Q=0;
+initial Qbar=1;
+always @(posedge clk)
+begin
+Q=D;
+Qbar=~D;
+end
+endmodule
+
+*/
+### RTL LOGIC FOR FLIPFLOPS 
+![Screenshot 2023-05-31 165256](https://github.com/JEGADEESH07/Experiment--05-Implementation-of-flipflops-using-verilog/assets/113497131/8455ee11-3026-47d3-80d7-b287017707af)
+
+### TIMING DIGRAMS FOR FLIP FLOPS 
+![Screenshot 2023-05-31 170012](https://github.com/JEGADEESH07/Experiment--05-Implementation-of-flipflops-using-verilog/assets/113497131/6429f55f-1cdd-4557-addf-0ea0399ee63d)
 
 
 
+### PROGRAM 3(SR FLIP FLOP)
+/*
+Program for flipflops  and verify its truth table in quartus using Verilog programming.
+Developed by: JEGADEESH S
+RegisterNumber:  212222230055
 
+module flipflops(S,R,clk,Q,Qbar);
+input S,R,clk;
+output reg Q;
+output reg Qbar;
+initial Q=0;
+initial Qbar=1;
+always @(posedge clk)
+begin
+Q=S|((~R)&Q);
+Qbar=R|((~S)&(Qbar));
+end
+endmodule
+
+*/
+### RTL LOGIC FOR FLIPFLOPS 
+![Screenshot 2023-05-25 115651](https://github.com/JEGADEESH07/Experiment--05-Implementation-of-flipflops-using-verilog/assets/113497131/d5efbe42-75c4-4def-af58-361ef70e1bfc)
+
+### TIMING DIGRAMS FOR FLIP FLOPS 
+![Screenshot 2023-05-25 115548](https://github.com/JEGADEESH07/Experiment--05-Implementation-of-flipflops-using-verilog/assets/113497131/61c661ae-cab4-44e4-a9d9-8081d69321b7)
+
+
+
+### PROGRAM 4(JK FLIP FLOP)
+/*
+Program for flipflops and verify its truth table in quartus using Verilog programming.
+Developed by: JEGADEESH S
+RegisterNumber:  212222230055
+
+module flipflops(J,K,clk,Q,Qbar);
+input J,K,clk;
+output reg Q;
+output reg Qbar;
+initial Q=0;
+initial Qbar=1;
+always @(posedge clk)
+begin
+Q=(J&(~Q))|((~K)&Q);
+Qbar=((~J)&(Qbar))|K&(~Qbar);
+end
+endmodule
+
+*/
+### RTL LOGIC FOR FLIPFLOPS 
+![Screenshot 2023-05-25 113050](https://github.com/JEGADEESH07/Experiment--05-Implementation-of-flipflops-using-verilog/assets/113497131/175a838e-2071-40e5-ae46-4d9db418b6ff)
+
+### TIMING DIGRAMS FOR FLIP FLOPS 
+![Screenshot 2023-05-25 113014](https://github.com/JEGADEESH07/Experiment--05-Implementation-of-flipflops-using-verilog/assets/113497131/fc725285-01e0-46cc-9967-25756ab7334b)
 
 
 
